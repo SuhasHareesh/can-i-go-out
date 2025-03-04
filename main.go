@@ -99,11 +99,9 @@ func callWeatherAPI(loc string, day int) {
     fmt.Printf(" %.0fF (Feels like %.0fF), %.0fC (Feels like %.0fC), %s\n", current.TempF, current.FeelF, current.TempC, current.FeelC, current.Condition.Text)
     fmt.Printf("%s%s%s\n", colors.Green, weather.Forecast.ForecastDay[day].Date, colors.Reset);
 
-    // localTime := time.Unix(weather.Location.LocalTime, 0)
-
     loctime, err := time.LoadLocation(location.TimeZone)
     if err != nil {
-        fmt.Println("⚠️ Warning: Could not load timezone, using UTC.")
+        fmt.Println("Could not load timezone, using UTC.")
         loctime = time.UTC
     }
 
@@ -142,9 +140,7 @@ func callWeatherAPI(loc string, day int) {
                 colors.Reset,
                 )
         }
-
     }
-
 }
 
 func main() {
@@ -153,6 +149,5 @@ func main() {
 
 	flag.Parse()
 
-	// Call weather API with user inputs
 	callWeatherAPI(*location, *days)
 }
