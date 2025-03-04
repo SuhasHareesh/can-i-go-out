@@ -111,7 +111,7 @@ func callWeatherAPI(loc string, day int) {
 
         now := time.Now().In(loctime)
 
-        if localTime.Before(now) { // ✅ Skip past times properly
+        if localTime.Before(now) {
             continue
         }
 
