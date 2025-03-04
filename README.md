@@ -6,12 +6,12 @@
 ### This app basically brings in the weather information on the TERMINAL for a location by default. I've set the app to my location.
 
 ## Command Line Flags
-` -l : To set a location for it to display the weather for.`
+` -l : To set a location for it to display the weather for.` <br>
 ` -d : To look forward into the Future! Yeah you can time travel. All jokes aside, use values 1 and 2 to see the weather for the tomorrow or the day after tomorrow`
 
 ### If only I could look forward into the future. :p
 
 
-## Thanks for reading my little side-project!
+### Thanks for reading about my little side-project!
 
 ## Also I'm open to feedbacks from any of you CRITICS out there. :)
